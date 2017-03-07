@@ -9,7 +9,7 @@ Current configuration:
 -ascale			20.0		2.000000e+01
 -aw			1		1
 -backtrace		no		yes
--beam			1e-48		1.000000e-48
+-beam			1e-48		1.000000e-57
 -bestpath		yes		no
 -bestpathlw		9.5		9.500000e+00
 -ceplen			13		13
@@ -163,7 +163,7 @@ INFO: jsgf.c(706): Defined rule: <forcing.g00007>
 INFO: jsgf.c(706): Defined rule: PUBLIC <forcing.phrase>
 INFO: fsg_model.c(208): Computing transitive closure for null transitions
 INFO: fsg_model.c(270): 0 null transitions added
-INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -1260; wip: -26, pip: 0)
+INFO: fsg_search.c(227): FSG(beam: -1282, pbeam: -1080, wbeam: -1260; wip: -26, pip: 0)
 INFO: fsg_search.c(173): Added 0 alternate word transitions
 INFO: fsg_lextree.c(110): Allocated 2838 bytes (2 KiB) for left and right context phones
 INFO: fsg_lextree.c(256): 55 HMM nodes in lextree (55 leaves)
@@ -173,11 +173,44 @@ INFO: continuous.c(307): pocketsphinx_continuous COMPILED ON: Mar  7 2017, AT: 1
 
 INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(138): Update to   < 34.53 16.51  3.66  9.72 12.78  9.70 -6.55 -9.83  3.94 -2.84 -0.86  4.71  1.84 >
-INFO: fsg_search.c(859): 369 frames, 4892 HMMs (13/fr), 15760 senones (42/fr), 4660 history entries (12/fr)
+INFO: fsg_search.c(859): 369 frames, 5405 HMMs (14/fr), 16680 senones (45/fr), 4912 history entries (13/fr)
 
 INFO: fsg_search.c(869): fsg 0.07 CPU 0.019 xRT
 INFO: fsg_search.c(871): fsg 0.07 wall 0.019 xRT
-ERROR: "fsg_search.c", line 940: Final result does not match the grammar in frame 369
-ERROR: "fsg_search.c", line 940: Final result does not match the grammar in frame 369
-INFO: fsg_search.c(265): TOTAL fsg 0.07 CPU 0.020 xRT
+INFO: pocketsphinx.c(1171): sil hh aw sil m eh n iy p iy p ah l aa r ih n sil y uh r sil f ae m l iy sil (-13141)
+word                 start end   pprob ascr       lscr       lback
+sil                  0     19    1.000 -183       0          1  
+hh                   20    24    1.000 -174       0          1  
+aw                   25    48    1.000 -303       0          1  
+sil                  49    72    1.000 -835       0          1  
+m                    73    96    1.000 -812       0          1  
+eh                   97    107   1.000 -593       0          1  
+n                    108   115   1.000 -511       0          1  
+iy                   116   128   1.000 -324       0          1  
+(NULL)               128   128   1.000 0          0          1  
+p                    129   137   1.000 -342       0          1  
+iy                   138   157   1.000 -326       0          1  
+p                    158   162   1.000 -227       0          1  
+ah                   163   166   1.000 -114       0          1  
+l                    167   170   1.000 -170       0          1  
+(NULL)               170   170   1.000 0          0          1  
+aa                   171   173   1.000 -244       0          1  
+r                    174   180   1.000 -328       0          1  
+(NULL)               180   180   1.000 0          0          1  
+ih                   181   183   1.000 -395       0          1  
+n                    184   188   1.000 -123       0          1  
+sil                  189   194   1.000 -329       0          1  
+y                    195   197   1.000 -327       0          1  
+uh                   198   200   1.000 -239       0          1  
+r                    201   219   1.000 -371       0          1  
+sil                  220   283   1.000 -2355      0          1  
+f                    284   286   1.000 -338       0          1  
+ae                   287   289   1.000 -297       0          1  
+m                    290   331   1.000 -1738      0          1  
+l                    332   334   1.000 -226       0          1  
+(NULL)               334   334   1.000 0          0          1  
+iy                   335   337   1.000 -405       0          1  
+sil                  338   368   1.000 -512       0          1  
+INFO: fsg_search.c(265): TOTAL fsg 0.07 CPU 0.019 xRT
 INFO: fsg_search.c(268): TOTAL fsg 0.07 wall 0.019 xRT
+sil hh aw sil m eh n iy p iy p ah l aa r ih n sil y uh r sil f ae m l iy sil

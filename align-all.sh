@@ -6,6 +6,7 @@ for w in hmpaiyf??.wav ; do
 		-backtrace yes \
 		-fsgusefiller no \
 		-bestpath no \
+		-beam 1e-57 \
 		-wbeam 1e-56 \
 		2>&1 | tee $w-align.txt ;
 done

@@ -9,7 +9,7 @@ Current configuration:
 -ascale			20.0		2.000000e+01
 -aw			1		1
 -backtrace		no		yes
--beam			1e-48		1.000000e-48
+-beam			1e-48		1.000000e-57
 -bestpath		yes		no
 -bestpathlw		9.5		9.500000e+00
 -ceplen			13		13
@@ -163,7 +163,7 @@ INFO: jsgf.c(706): Defined rule: <forcing.g00007>
 INFO: jsgf.c(706): Defined rule: PUBLIC <forcing.phrase>
 INFO: fsg_model.c(208): Computing transitive closure for null transitions
 INFO: fsg_model.c(270): 0 null transitions added
-INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -1260; wip: -26, pip: 0)
+INFO: fsg_search.c(227): FSG(beam: -1282, pbeam: -1080, wbeam: -1260; wip: -26, pip: 0)
 INFO: fsg_search.c(173): Added 0 alternate word transitions
 INFO: fsg_lextree.c(110): Allocated 2838 bytes (2 KiB) for left and right context phones
 INFO: fsg_lextree.c(256): 55 HMM nodes in lextree (55 leaves)
@@ -173,40 +173,40 @@ INFO: continuous.c(307): pocketsphinx_continuous COMPILED ON: Mar  7 2017, AT: 1
 
 INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(138): Update to   < 40.74  7.10  0.69 13.66  8.28 12.57 -2.42  7.05  8.80  7.15 -9.43  4.08 -7.93 >
-INFO: fsg_search.c(859): 489 frames, 6375 HMMs (13/fr), 20180 senones (41/fr), 6292 history entries (12/fr)
+INFO: fsg_search.c(859): 489 frames, 7416 HMMs (15/fr), 22134 senones (45/fr), 6910 history entries (14/fr)
 
 INFO: fsg_search.c(869): fsg 0.12 CPU 0.025 xRT
 INFO: fsg_search.c(871): fsg 0.12 wall 0.025 xRT
-INFO: pocketsphinx.c(1171): sil hh aw sil m eh n iy sil p iy p ah l aa r sil ih n sil y uh r sil f ae m l iy sil (-15107)
+INFO: pocketsphinx.c(1171): sil hh aw sil m eh n iy sil p iy p ah l aa r sil ih n sil y uh r sil f ae m l iy sil (-15287)
 word                 start end   pprob ascr       lscr       lback
-sil                  0     32    1.000 -237       0          1  
+sil                  0     32    1.000 -322       0          1  
 hh                   33    45    1.000 -157       0          1  
-aw                   46    76    1.000 -278       0          1  
-sil                  77    101   1.000 -865       0          1  
-m                    102   122   1.000 -778       0          1  
-eh                   123   148   1.000 -631       0          1  
-n                    149   162   1.000 -256       0          1  
+aw                   46    76    1.000 -249       0          1  
+sil                  77    101   1.000 -783       0          1  
+m                    102   122   1.000 -728       0          1  
+eh                   123   148   1.000 -612       0          1  
+n                    149   162   1.000 -282       0          1  
 iy                   163   191   1.000 -1027      0          1  
 sil                  192   199   1.000 -265       0          1  
-p                    200   202   1.000 -153       0          1  
-iy                   203   221   1.000 -805       0          1  
+p                    200   202   1.000 -177       0          1  
+iy                   203   221   1.000 -849       0          1  
 p                    222   229   1.000 -242       0          1  
 ah                   230   232   1.000 -416       0          1  
 l                    233   235   1.000 -151       0          1  
 (NULL)               235   235   1.000 0          0          1  
 aa                   236   238   1.000 -321       0          1  
 r                    239   252   1.000 -638       0          1  
-sil                  253   289   1.000 -1853      0          1  
+sil                  253   289   1.000 -1800      0          1  
 ih                   290   294   1.000 -212       0          1  
-n                    295   304   1.000 -279       0          1  
-sil                  305   347   1.000 -1736      0          1  
+n                    295   304   1.000 -293       0          1  
+sil                  305   347   1.000 -1774      0          1  
 y                    348   359   1.000 -319       0          1  
 uh                   360   365   1.000 -172       0          1  
-r                    366   378   1.000 -386       0          1  
+r                    366   378   1.000 -439       0          1  
 sil                  379   402   1.000 -641       0          1  
-f                    403   407   1.000 -150       0          1  
-ae                   408   420   1.000 -121       0          1  
-m                    421   434   1.000 -673       0          1  
+f                    403   407   1.000 -258       0          1  
+ae                   408   420   1.000 -138       0          1  
+m                    421   434   1.000 -677       0          1  
 l                    435   458   1.000 -450       0          1  
 (NULL)               458   458   1.000 0          0          1  
 iy                   459   468   1.000 -673       0          1  
