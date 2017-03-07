@@ -112,7 +112,7 @@ Current configuration:
 -verbose		no		no
 -warp_params				
 -warp_type		inverse_linear	inverse_linear
--wbeam			7e-29		7.000000e-29
+-wbeam			7e-29		1.000000e-56
 -wip			0.65		6.500000e-01
 -wlen			0.025625	2.562500e-02
 
@@ -163,7 +163,7 @@ INFO: jsgf.c(706): Defined rule: <forcing.g00007>
 INFO: jsgf.c(706): Defined rule: PUBLIC <forcing.phrase>
 INFO: fsg_model.c(208): Computing transitive closure for null transitions
 INFO: fsg_model.c(270): 0 null transitions added
-INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -1260; wip: -26, pip: 0)
 INFO: fsg_search.c(173): Added 0 alternate word transitions
 INFO: fsg_lextree.c(110): Allocated 2838 bytes (2 KiB) for left and right context phones
 INFO: fsg_lextree.c(256): 55 HMM nodes in lextree (55 leaves)
@@ -173,44 +173,44 @@ INFO: continuous.c(307): pocketsphinx_continuous COMPILED ON: Mar  7 2017, AT: 1
 
 INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(138): Update to   < 34.35 15.89  3.85 16.82 10.35 15.18 -6.50 -8.35 -0.01 -7.00  1.04  9.63  0.13 >
-INFO: fsg_search.c(859): 426 frames, 4059 HMMs (9/fr), 14339 senones (33/fr), 2682 history entries (6/fr)
+INFO: fsg_search.c(859): 426 frames, 5578 HMMs (13/fr), 17523 senones (41/fr), 5335 history entries (12/fr)
 
-INFO: fsg_search.c(869): fsg 0.08 CPU 0.019 xRT
-INFO: fsg_search.c(871): fsg 0.08 wall 0.019 xRT
-INFO: pocketsphinx.c(1171): sil hh aw sil m eh n iy sil p iy p ah l sil aa r ih n sil y uh r f ae m l iy (-13741)
+INFO: fsg_search.c(869): fsg 0.09 CPU 0.020 xRT
+INFO: fsg_search.c(871): fsg 0.09 wall 0.020 xRT
+INFO: pocketsphinx.c(1171): sil hh aw sil m eh n iy p iy p ah l aa r ih n sil y uh r sil f ae m l iy (-13920)
 word                 start end   pprob ascr       lscr       lback
 sil                  0     6     1.000 -254       0          1  
 hh                   7     9     1.000 -127       0          1  
-aw                   10    26    1.000 -210       0          1  
-sil                  27    77    1.000 -1578      0          1  
+aw                   10    26    1.000 -264       0          1  
+sil                  27    77    1.000 -1835      0          1  
 m                    78    98    1.000 -585       0          1  
-eh                   99    117   1.000 -375       0          1  
-n                    118   140   1.000 -926       0          1  
-iy                   141   143   1.000 -363       0          1  
-sil                  144   201   1.000 -1401      0          1  
-p                    202   204   1.000 -182       0          1  
-iy                   205   224   1.000 -365       0          1  
-p                    225   228   1.000 -253       0          1  
-ah                   229   232   1.000 -112       0          1  
-l                    233   242   1.000 -142       0          1  
-sil                  243   277   1.000 -1370      0          1  
-aa                   278   281   1.000 -294       0          1  
-r                    282   293   1.000 -369       0          1  
-(NULL)               293   293   1.000 0          0          1  
-ih                   294   299   1.000 -220       0          1  
-n                    300   302   1.000 -262       0          1  
-sil                  303   334   1.000 -1597      0          1  
-y                    335   342   1.000 -100       0          1  
-uh                   343   347   1.000 -146       0          1  
-r                    348   354   1.000 -359       0          1  
-(NULL)               354   354   1.000 0          0          1  
-f                    355   379   1.000 -618       0          1  
-ae                   380   388   1.000 -171       0          1  
-m                    389   398   1.000 -444       0          1  
+eh                   99    102   1.000 -144       0          1  
+n                    103   105   1.000 -167       0          1  
+iy                   106   108   1.000 -289       0          1  
+(NULL)               108   108   1.000 0          0          1  
+p                    109   111   1.000 -337       0          1  
+iy                   112   114   1.000 -129       0          1  
+p                    115   117   1.000 -230       0          1  
+ah                   118   124   1.000 -175       0          1  
+l                    125   142   1.000 -466       0          1  
+(NULL)               142   142   1.000 0          0          1  
+aa                   143   150   1.000 -187       0          1  
+r                    151   153   1.000 -263       0          1  
+(NULL)               153   153   1.000 0          0          1  
+ih                   154   156   1.000 -444       0          1  
+n                    157   161   1.000 -131       0          1  
+sil                  162   204   1.000 -644       0          1  
+y                    205   228   1.000 -444       0          1  
+uh                   229   235   1.000 -280       0          1  
+r                    236   261   1.000 -391       0          1  
+sil                  262   352   1.000 -3825      0          1  
+f                    353   379   1.000 -602       0          1  
+ae                   380   388   1.000 -177       0          1  
+m                    389   398   1.000 -612       0          1  
 l                    399   403   1.000 -253       0          1  
 (NULL)               403   403   1.000 0          0          1  
 iy                   404   425   1.000 -665       0          1  
 (NULL)               425   425   1.000 0          0          1  
-INFO: fsg_search.c(265): TOTAL fsg 0.08 CPU 0.019 xRT
-INFO: fsg_search.c(268): TOTAL fsg 0.08 wall 0.019 xRT
-sil hh aw sil m eh n iy sil p iy p ah l sil aa r ih n sil y uh r f ae m l iy
+INFO: fsg_search.c(265): TOTAL fsg 0.09 CPU 0.020 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.09 wall 0.020 xRT
+sil hh aw sil m eh n iy p iy p ah l aa r ih n sil y uh r sil f ae m l iy
