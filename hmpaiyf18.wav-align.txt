@@ -1,4 +1,4 @@
-INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us/feat.params
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /home/ak/sphinx/share/pocketsphinx/model/en-us/en-us/feat.params
 Current configuration:
 [NAME]			[DEFLT]		[VALUE]
 -agc			none		none
@@ -37,7 +37,7 @@ Current configuration:
 -fwdflatsfwin		25		25
 -fwdflatwbeam		7e-29		7.000000e-29
 -fwdtree		yes		yes
--hmm					/home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us
+-hmm					/home/ak/sphinx/share/pocketsphinx/model/en-us/en-us
 -input_endian		little		little
 -jsgf					hmpaiyf-align.jsgf
 -keyphrase				
@@ -118,24 +118,24 @@ Current configuration:
 
 INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
 INFO: acmod.c(162): Using subvector specification 0-12/13-25/26-38
-INFO: mdef.c(518): Reading model definition: /home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: mdef.c(518): Reading model definition: /home/ak/sphinx/share/pocketsphinx/model/en-us/en-us/mdef
 INFO: mdef.c(531): Found byte-order mark BMDF, assuming this is a binary mdef file
-INFO: bin_mdef.c(336): Reading binary model definition: /home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: bin_mdef.c(336): Reading binary model definition: /home/ak/sphinx/share/pocketsphinx/model/en-us/en-us/mdef
 INFO: bin_mdef.c(516): 42 CI-phone, 137053 CD-phone, 3 emitstate/phone, 126 CI-sen, 5126 Sen, 29324 Sen-Seq
-INFO: tmat.c(149): Reading HMM transition probability matrices: /home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us/transition_matrices
+INFO: tmat.c(149): Reading HMM transition probability matrices: /home/ak/sphinx/share/pocketsphinx/model/en-us/en-us/transition_matrices
 INFO: acmod.c(113): Attempting to use PTM computation module
-INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us/means
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/ak/sphinx/share/pocketsphinx/model/en-us/en-us/means
 INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
 INFO: ms_gauden.c(244):  128x13
 INFO: ms_gauden.c(244):  128x13
 INFO: ms_gauden.c(244):  128x13
-INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us/variances
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/ak/sphinx/share/pocketsphinx/model/en-us/en-us/variances
 INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
 INFO: ms_gauden.c(244):  128x13
 INFO: ms_gauden.c(244):  128x13
 INFO: ms_gauden.c(244):  128x13
 INFO: ms_gauden.c(304): 222 variance values floored
-INFO: ptm_mgau.c(476): Loading senones from dump file /home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us/sendump
+INFO: ptm_mgau.c(476): Loading senones from dump file /home/ak/sphinx/share/pocketsphinx/model/en-us/en-us/sendump
 INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
 INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
 INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
@@ -145,7 +145,7 @@ INFO: dict.c(320): Allocating 4141 * 32 bytes (129 KiB) for word entries
 INFO: dict.c(333): Reading main dictionary: phonemes.dict
 INFO: dict.c(213): Dictionary size 40, allocated 0 KiB for strings, 0 KiB for phones
 INFO: dict.c(336): 40 words read
-INFO: dict.c(358): Reading filler dictionary: /home/jsalsman/pocketsphinx/share/pocketsphinx/model/en-us/en-us/noisedict
+INFO: dict.c(358): Reading filler dictionary: /home/ak/sphinx/share/pocketsphinx/model/en-us/en-us/noisedict
 INFO: dict.c(213): Dictionary size 45, allocated 0 KiB for strings, 0 KiB for phones
 INFO: dict.c(361): 5 words read
 INFO: dict2pid.c(396): Building PID tables for dictionary
@@ -169,14 +169,14 @@ INFO: fsg_lextree.c(110): Allocated 2838 bytes (2 KiB) for left and right contex
 INFO: fsg_lextree.c(256): 55 HMM nodes in lextree (55 leaves)
 INFO: fsg_lextree.c(259): Allocated 7920 bytes (7 KiB) for all lextree nodes
 INFO: fsg_lextree.c(262): Allocated 7920 bytes (7 KiB) for lextree leafnodes
-INFO: continuous.c(307): /home/jsalsman/pocketsphinx/bin/pocketsphinx_continuous COMPILED ON: Jan 23 2017, AT: 12:22:28
+INFO: continuous.c(307): pocketsphinx_continuous COMPILED ON: Mar  7 2017, AT: 11:25:53
 
 INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(138): Update to   < 34.27 14.39 -1.99  5.84 14.00 17.97 -3.09 -2.43 -1.05 -5.10 -0.19  7.40  1.37 >
 INFO: fsg_search.c(859): 359 frames, 3403 HMMs (9/fr), 12200 senones (33/fr), 2532 history entries (7/fr)
 
-INFO: fsg_search.c(869): fsg 0.16 CPU 0.045 xRT
-INFO: fsg_search.c(871): fsg 0.22 wall 0.060 xRT
+INFO: fsg_search.c(869): fsg 0.09 CPU 0.025 xRT
+INFO: fsg_search.c(871): fsg 0.09 wall 0.025 xRT
 INFO: pocketsphinx.c(1171): sil hh aw m eh n iy p iy p ah l aa r ih n sil y uh r sil f ae m l iy sil (-12417)
 word                 start end   pprob ascr       lscr       lback
 sil                  0     47    1.000 -1366      0          1  
@@ -211,6 +211,6 @@ l                    292   304   1.000 -479       0          1
 (NULL)               304   304   1.000 0          0          1  
 iy                   305   307   1.000 -334       0          1  
 sil                  308   358   1.000 -1072      0          1  
-INFO: fsg_search.c(265): TOTAL fsg 0.16 CPU 0.045 xRT
-INFO: fsg_search.c(268): TOTAL fsg 0.22 wall 0.060 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.09 CPU 0.025 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.09 wall 0.025 xRT
 sil hh aw m eh n iy p iy p ah l aa r ih n sil y uh r sil f ae m l iy sil
